@@ -29,7 +29,7 @@ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
                 </div>
                 <div class="form-group mb-3">
                     <label for="exampleFormControlTextarea1">Alamat</label>
-                    <textarea name="alamat" class="form-control mt-2" id="exampleFormControlTextarea1" rows="3" placeholder="Alamat" value= "{{ $anak->alamat }}"> </textarea>
+                    <textarea name="alamat" type="text" class="form-control mt-2" id="exampleFormControlTextarea1" rows="3" placeholder="Alamat" value= "{{ $anak->alamat }}"> </textarea>
                 </div>
                 <div class="form-group mb-3">
                     <label for="exampleInputEmail1">Tinggi (cm)</label>

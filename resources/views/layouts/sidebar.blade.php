@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
-  <title>Bootstrap Example</title>
+  <title>PosyanduX</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -32,12 +32,12 @@
 
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dashboard</h5>
+      <a href="/home" class="nav-link"><h5 class="offcanvas-title" id="offcanvasExampleLabel">Dashboard</h5></a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
       <div class="">
-        <a href="anak" class="nav-link" style="font-size: 16px">
+        <a href="/anak" class="nav-link" style="font-size: 16px">
           Data Anak
         </a>
         <a href="grafik" class="nav-link" style="font-size: 16px">
