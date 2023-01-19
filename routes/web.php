@@ -22,7 +22,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/anak', [App\Http\Controllers\AnakController::class, 'index'])->name('anak');
+Route::get('/anak', [App\Http\Controllers\AnakController::class, 'admin'])->name('anak');
 
 Route::get('/anak/cari', [App\Http\Controllers\AnakController::class, 'cari']);
 
@@ -32,9 +32,10 @@ Route::get('/anak/{id}/edit', [App\Http\Controllers\AnakController::class, 'edit
 
 Route::post('/anak/{id}/update', [App\Http\Controllers\AnakController::class, 'update'])->name('update.anak');
 
-Route::get('/anak/delete/{id}', [App\Http\Controllers\AnakController::class, 'delete']);
+Route::get('/anak/delete/{id}',  [App\Http\Controllers\AnakController::class, 'delete'])->middleware('auth', 'admin');
 
 Route::get('/anak', [App\Http\Controllers\AnakController::class, 'index']);
 
-Route::put('post/{id}/publish', [PostController::class, 'publish'])->name('post.publish');
-Route::put('post/{id}/unpublish', [PostController::class, 'unpublish'])->name('post.unpublish');
+//Route::get('/anak', function() {
+//    return redirect('anak')->with('Gagal', 'Anda Tidak Memiliki Akses!');
+//})->middleware('auth', 'admin');
